@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elysiaan_artshop Web</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a731c6215e.js" crossorigin="anonymous"></script>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
+
+		<style>
+			body {
+			  background-image: url(images/bbb1.avif);
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 10px;
+      }
+      
+      .topnav a.icon {
+        float: right;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+        color: white;
+      }
+			</style>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        
+        </body>
+        
+		
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="#home" class="logo">elysiaan_art</a>
+    <div id="myLinks">
+      <a href="#home">Home</a>
+      <a href="#featured">featured</a>
+      <a href="#abstract">Abstract</a>
+      <a href="#about">Portrait</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <section class="home" id="home">
+		<div class="homepg">
+			<div class="homecontent">
+			<h1>From the artist's creativity to your doorstep!!!</h1>
+			<p>We are here to deliever you the creativity of the people.</p>
+			<p>Contact us</p>
+			<div class="socialmedia">
+				<a href="https://www.instagram.com/elyssiaan_art?igsh=MTN3aXluOWt5YWh2aw=="><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://youtube.com/@elyssiaan_art?si=F57cek4DZEkj0O6W"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.instagram.com/elyssiaan_art?igsh=MTN3aXluOWt5YWh2aw=="><i class="fa-regular fa-address-book"></i></a>
+			</div>
+		</div>
+				<div class="homeimg">
+					<img src="images/homeimg.png" height="500px" width="300px">
+				</div>
+		</div>
+	</section>
+
+  <section id="featured">
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper-holder">
+          <div id="slider-img-1"></div>
+          <div id="slider-img-2"></div>
+          <div id="slider-img-3"></div>
+          <div id="slider-img-4"></div>
+        </div>
+        <div class="button-holder">
+          <a href="#slider-img-1" class="button"></a>
+          <a href="#slider-img-2" class="button"></a>
+          <a href="#slider-img-3" class="button"></a>
+          <a href="#slider-img-4" class="button"></a>
+        </div>
+      </div>
+    </div>
+    </section>
+  
+    <section id="abstract">
+      <div class="card-container">
+  
+        <div class="card">
+          <img src="images/a8.jpg">
+          <div class="abscontent">
+            <h1>Price:</h1>
+            <a href="" class="button">Buy now</a>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img src="images/a8.jpg">
+          <div class="abscontent">
+            <h1>Price:</h1>
+            <a href="" class="button">Buy now</a>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img src="images/a8.jpg">
+          <div class="abscontent">
+            <h1>Price:</h1>
+            <a href="" class="button">Buy now</a>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  
+
+  </body>
+  </html>

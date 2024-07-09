@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-image: url('images/bbb1.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    background-color: black;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0px;
+}
+
+.active {
+    background-color: black;
+}
+
+.topnav #myLinks a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+}
+
+#section {
+    height: 100vh;
+}
+
+.homenav {
+    height: 30px;
+}
+
+#home {
+    height: 100vh;
+}
+
+.homepg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 93vh;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.socialmedia {
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.socialmedia a {
+    padding: 1px;
+}
+
+.homecontent {
+    font-size: 30px;
+    padding: 30px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    font-style: normal;
+}
+
+#featured {
+    font-size: 30px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-2 {
+    height: 100vh;
+    padding: 10px;
+}
+
+.slider {
+    max-width: 150vh;
+    height: 85vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+}
+
+#abstract {
+    padding-bottom: 5px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.header1 {
+    padding-top: 25px;
+    font-family: "Merienda", cursive;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.absimg {
+    width: 100%;
+    height: 312px;
+}
+
+.abscontent {
+    padding: 15px;
+}
+
+.abscontent h1 {
+    padding-bottom: 20px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+#Portrait {
+    height: 100vh;
+}
