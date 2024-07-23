@@ -62,15 +62,12 @@ body {
     height: 100vh;
 }
 
-.homenav {
-    height: 100px;
-}
-
 .homepg {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height:90vh;
     flex-direction: row-reverse;
     align-content: center;
     flex-wrap: wrap;
